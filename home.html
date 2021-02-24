@@ -1,0 +1,160 @@
+<?php include 'sendemail.php'; ?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="https://icons-for-free.com/iconfiles/png/512/case+office+office+bag+portfolio+icon+icon-1320086639842585330.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <title>Matthew Lee Portfolio</title>
+  </head>
+  <body>
+
+    <?php echo $alert; ?>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="textBox">
+            <h2>Hello, my name is <span>Matthew Lee</span>.</h2>
+            <h2>I'm a front-end developer.</h2>
+            <a href="#about" class="btn">View my work</a>
+        </div> 
+    </section>
+
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto text-uppercase text-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="heading">
+            <h2>About</h2>
+        </div>
+        <div>
+            <div class="avatar">
+                <img src="resources/images/Matt_Avatar.jpg" alt="Matt_Avatar"/>
+            </div>
+            <div class="quote">
+                <p>I’m a growing Front-End Developer residing in the Washington. D.C. area.<br>
+                   My passion lies with crafting beautiful and simple UI.  
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col info-box">
+                        <img class="logo" src="resources/images/frontendlogo.jpg" alt="frontendlogo">
+                        <h3>Coding</h3>
+                        <p class="description">I like to write code efficiently and bring it to life.</p>
+                        <h4>Languages</h4>
+                        <p>JavaScript<br>CSS<br>HTML<br>Java</p>
+                    </div>
+                    <div class="col info-box">
+                        <img class="logo" src="resources/images/designlogo.jpg" alt="designlogo">
+                        <h3>Tools</h3>
+                        <p class="description">I like to create responsive content and design them with care.</p>
+                        <h4>Tools</h4>
+                        <p>ReactJS<br>jQuery<br>Bootstrap<br>Figma<br>Github<br>VSCode</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="heading">
+            <h2>Projects</h2>
+        </div>
+        <div class="container">            
+            <div class="row justify-content-center">
+                <div class="col photography-project project-box">
+                    <div class="project-content">
+                        <p>jinleestudios</p>
+                        <a class="btn" href="https://www.jinleestudios.com/">visit</a>
+                    </div>
+                </div>
+                <div class="col weather-project">
+                    <div class="project-content">
+                        <p>myweathercast</p>
+                        <a class="btn" href="https://myweathercast.netlify.app/">visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+        </div>
+        <p>Say hello!</p>
+        <div class="contact-form">
+            <form name="contact" netlify>
+                <div class="container">
+                    <div class="row row-adjust">
+                        <div class="col">
+                            <input class="contact-piece" name="name" type="text" id="name" placeholder="Name">  
+                        </div>
+                    </div>
+                    <div class="row row-adjust">
+                        <div class="col">
+                            <input class="contact-piece" name="email" type="text" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row row-adjust row-textarea">
+                        <div class="col col-textarea">
+                            <textarea class="contact-piece" id="message" name="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row row-adjust">
+                        <div class="col">
+                            <input class="submit btn" name="submit" type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Matthew Lee <span>&#169; 2021</span></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="resources/js/main.js"></script>
+
+  </body>
+</html>
